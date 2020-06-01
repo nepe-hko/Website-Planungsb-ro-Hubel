@@ -212,5 +212,20 @@
   $('.panel-group').on('hidden.bs.collapse', toggleIcon);
   $('.panel-group').on('shown.bs.collapse', toggleIcon);
 
+  // Impressum
+
+  $(".impressumClick").on( 'click', function() {
+    console.log("clicked");
+    $('.impressum').toggleClass('showImpressum');
+    var act = $('.impressumClick').html();
+    if (act == 'Ausblenden') {
+      $('.impressumClick').html('Anzeigen');
+    } else {
+      $('.impressumClick').html('Ausblenden');
+    }
+    
+  });
+
+
 })(jQuery);
 
